@@ -67,6 +67,7 @@ CREATE DATABASE `dev.aiot` CHARACTER SET `utf8mb4` COLLATE `utf8mb4_general_ci`;
 CREATE USER 'aiot'@'localhost' IDENTIFIED BY 'H%21ka/bl3-';
 GRANT USAGE ON *.* TO 'aiot'@'localhost' REQUIRE NONE WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0;
 GRANT ALL PRIVILEGES ON `dev.aiot`.* TO 'aiot'@'localhost'; 
+FLUSH PRIVILEGES; 
 ```
 
 ## Applikation erzeugen
