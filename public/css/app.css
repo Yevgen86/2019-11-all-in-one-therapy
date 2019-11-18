@@ -7,7 +7,7 @@ body {
   margin: 0;
   width: 100%;
   background-size: cover;
-  background: url(/images/vegas.jpg?e6fc792fc01d6cbe898c4fefb06e6e5b) no-repeat center;
+  background: url("/img/vegas.jpg") no-repeat center;
 }
 
 .full-height {
@@ -67,9 +67,34 @@ body {
 .links > a:hover {
   color: #00ffee;
   text-shadow: 0 0 10px #00ffee;
+  text-decoration: none;
 }
 
 .m-b-md {
   margin-bottom: 30px;
+}
+
+.grey-layer {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-title {
+  width: 100%;
+  text-align: center;
+}
+
+.modal-content {
+  background-color: transparent !important;
+  color: #fff;
+}
+
+.modal-body .btn-primary {
+  float: right !important;
+}
+
+main h1 {
+  font-size: 60px;
+  color: #00ffee;
+  margin-bottom: 700px;
 }
 
