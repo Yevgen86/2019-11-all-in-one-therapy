@@ -21,10 +21,14 @@ Route::get('/login', function () {
 
 Route::post('/authenticate', 'Auth\LoginController@login')->name('authenticate');
 
-Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
 
 Route::group(['middleware' => ['auth']], function () {
+
+    Route::get('/logout', 'Auth\LoginController@logout')->name('logout');
+
     Route::get('/backend', function () {
         return view('backend');
     });
+
+    Route::get('/patients', 'PatientController@index');
 });

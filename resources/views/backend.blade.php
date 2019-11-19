@@ -4,7 +4,7 @@
 
 @section('top-links')
     @auth
-        <a href="{{ url('/') }}">Patient</a>
+        <a href="{{ url('/patients') }}">Patient</a>
         <a href="{{ url('/') }}">Kalender</a>
         <a href="{{ url('/') }}">Doku</a>
         <a href="{{ url('/') }}">FrontEnd</a>
@@ -13,4 +13,4 @@
 
 @section('main')
 <h1>Welcome to Backend</h1>
-@stop
+@endsection
