@@ -18,6 +18,10 @@
                 <div class="modal-body">
                     <form method="POST" action="{{ route('authenticate') }}">
                         @csrf
+                        {{-- if any errors by authentication   --}}
+                        @if( $errors->any() )
+                            <p class="alert alert-danger">Nice try! Try one more time!</p>
+                        @endif
                         <div class="form-group">
                             <label for="exampleInputEmail1">User</label>
                             <input type="text" name="name" class="form-control" id="exampleInputEmail1"
