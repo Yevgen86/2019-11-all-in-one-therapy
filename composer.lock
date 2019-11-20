@@ -4,8 +4,43 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "fa503b104f700e4337a4bf209a56bc8a",
+    "content-hash": "2a2db84e868c2777141b73f5253af8ad",
     "packages": [
+        {
+            "name": "components/font-awesome",
+            "version": "5.11.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/components/font-awesome.git",
+                "reference": "f4f114c4ab37d101e6a15370769bc0af681792fa"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/components/font-awesome/zipball/f4f114c4ab37d101e6a15370769bc0af681792fa",
+                "reference": "f4f114c4ab37d101e6a15370769bc0af681792fa",
+                "shasum": ""
+            },
+            "type": "component",
+            "extra": {
+                "component": {
+                    "styles": [
+                        "css/all.css"
+                    ],
+                    "files": [
+                        "css/all.min.css",
+                        "webfonts/*"
+                    ]
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "CC-BY-4.0",
+                "MIT",
+                "OFL-1.1"
+            ],
+            "description": "Font Awesome, the iconic SVG, font, and CSS framework.",
+            "time": "2019-11-13T10:33:06+00:00"
+        },
         {
             "name": "dnoegel/php-xdg-base-dir",
             "version": "0.1",
@@ -467,6 +502,63 @@
             ],
             "description": "Highlight PHP code in terminal",
             "time": "2018-09-29T18:48:56+00:00"
+        },
+        {
+            "name": "kyslik/column-sortable",
+            "version": "6.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Kyslik/column-sortable.git",
+                "reference": "4b628bffdb1724284dd0ae091262d24790225768"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Kyslik/column-sortable/zipball/4b628bffdb1724284dd0ae091262d24790225768",
+                "reference": "4b628bffdb1724284dd0ae091262d24790225768",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/database": "5.8.*|^6.0",
+                "illuminate/support": "5.8.*|^6.0",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "orchestra/testbench": "^4.0",
+                "phpunit/phpunit": "^8.0"
+            },
+            "type": "package",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Kyslik\\ColumnSortable\\ColumnSortableServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Kyslik\\ColumnSortable\\": "src/ColumnSortable/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Martin Kiesel",
+                    "email": "martin.kiesel@gmail.com",
+                    "role": "Developer and maintainer"
+                }
+            ],
+            "description": "Package for handling column sorting in Laravel 6.x",
+            "keywords": [
+                "column",
+                "laravel",
+                "sort",
+                "sortable",
+                "sorting"
+            ],
+            "time": "2019-10-14T19:39:29+00:00"
         },
         {
             "name": "laravel/framework",
@@ -2955,16 +3047,16 @@
         },
         {
             "name": "facade/flare-client-php",
-            "version": "1.1.2",
+            "version": "1.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/facade/flare-client-php.git",
-                "reference": "04c0bbd1881942f59e27877bac3b29ba57519666"
+                "reference": "5a1bfe4425974d17addeefce737d66a4c921a8df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/facade/flare-client-php/zipball/04c0bbd1881942f59e27877bac3b29ba57519666",
-                "reference": "04c0bbd1881942f59e27877bac3b29ba57519666",
+                "url": "https://api.github.com/repos/facade/flare-client-php/zipball/5a1bfe4425974d17addeefce737d66a4c921a8df",
+                "reference": "5a1bfe4425974d17addeefce737d66a4c921a8df",
                 "shasum": ""
             },
             "require": {
@@ -3005,7 +3097,7 @@
                 "flare",
                 "reporting"
             ],
-            "time": "2019-11-08T11:11:17+00:00"
+            "time": "2019-11-19T08:42:39+00:00"
         },
         {
             "name": "facade/ignition",

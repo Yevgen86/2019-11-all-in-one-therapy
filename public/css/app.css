@@ -7,7 +7,7 @@ body {
   margin: 0;
   width: 100%;
   background-size: cover;
-  background: url("/img/vegas.jpg") no-repeat center;
+  background: url("/images/vegas.jpg") no-repeat fixed center;
 }
 
 .full-height {
@@ -50,6 +50,7 @@ body {
 .links {
   position: absolute;
   bottom: 3%;
+  max-height: 30px;
 }
 
 .links > a {
@@ -92,9 +93,142 @@ body {
   float: right !important;
 }
 
+main {
+  width: 100%;
+}
+
 main h1 {
-  font-size: 60px;
+  font-size: 40px;
+  color: #007bff;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+main p.search-con {
+  padding: 0 15px;
+  width: 100%;
+  position: relative;
+}
+
+main .fa-search-plus {
+  position: absolute;
+  left: 3%;
+  top: 23%;
+  display: inline;
+  font-size: 20px;
+  color: #fff;
+  opacity: 0.8;
+}
+
+main input#search-patient {
+  width: 100%;
+  color: #fff !important;
+  background-color: transparent;
+  padding: 5px;
+  border: none;
+  -webkit-transition: 0.5s background linear;
+  transition: 0.5s background linear;
+  cursor: pointer;
+  text-indent: 30px;
+}
+
+main input#search-patient input#search-patient:hover {
+  box-shadow: 0 0 6px inset #fff !important;
+}
+
+main input#search-patient input#search-patient::-webkit-input-placeholder {
+  color: #fff !important;
+  opacity: 0.8;
+}
+
+main input#search-patient input#search-patient::-moz-placeholder {
+  color: #fff !important;
+  opacity: 0.8;
+}
+
+main input#search-patient input#search-patient:-ms-input-placeholder {
+  color: #fff !important;
+  opacity: 0.8;
+}
+
+main input#search-patient input#search-patient::-ms-input-placeholder {
+  color: #fff !important;
+  opacity: 0.8;
+}
+
+main input#search-patient input#search-patient::placeholder {
+  color: #fff !important;
+  opacity: 0.8;
+}
+
+main input#search-patient input#search-patient:hover::-webkit-input-placeholder {
+  color: #00ffee !important;
+}
+
+main input#search-patient input#search-patient:hover::-moz-placeholder {
+  color: #00ffee !important;
+}
+
+main input#search-patient input#search-patient:hover:-ms-input-placeholder {
+  color: #00ffee !important;
+}
+
+main input#search-patient input#search-patient:hover::-ms-input-placeholder {
+  color: #00ffee !important;
+}
+
+main input#search-patient input#search-patient:hover::placeholder {
+  color: #00ffee !important;
+}
+
+.patients-h1 {
+  margin: 100px 30px 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+table.table {
+  position: relative;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
+
+table.table tbody {
+  color: #fff;
+}
+
+table.table tbody tr:hover {
   color: #00ffee;
-  margin-bottom: 700px;
+}
+
+table.table th {
+  padding: 0 !important;
+}
+
+table.table th > a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.myTable-pagination {
+  position: absolute;
+  bottom: -80px;
+  left: 35%;
+  background-color: transparent !important;
+}
+
+.myTable-pagination td {
+  border: none !important;
+}
+
+.myTable-pagination .page-link {
+  background-color: transparent !important;
+  border-color: dimgrey !important;
+}
+
+.flex-center {
+  -webkit-box-align: normal !important;
+          align-items: normal !important;
 }
 

@@ -7,11 +7,13 @@ use Illuminate\Http\Request;
 
 class PatientController extends Controller
 {
-    public function index()
+    public function index(Request $request)
     {
-        return view('patients',
-            [
-                'patients' => Patient::paginate(10)
-            ]);
+        if (!empty($request))
+            $query = $request->query();
+
+        $patients = Patient::sortable()->paginate(10);
+        return view('patients', compact('patients', 'request'));
+
     }
 }
