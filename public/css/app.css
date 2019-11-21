@@ -3,11 +3,20 @@ body {
   color: #636b6f;
   font-family: "Nunito", sans-serif;
   font-weight: 200;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
   width: 100%;
   background-size: cover;
   background: url("/images/vegas.jpg") no-repeat fixed center;
+}
+
+front body {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .full-height {
@@ -132,7 +141,7 @@ main input#search-patient {
   text-indent: 30px;
 }
 
-main input#search-patient input#search-patient:hover {
+main input#search-patient:hover {
   box-shadow: 0 0 6px inset #fff !important;
 }
 
@@ -161,23 +170,23 @@ main input#search-patient input#search-patient::placeholder {
   opacity: 0.8;
 }
 
-main input#search-patient input#search-patient:hover::-webkit-input-placeholder {
+main input#search-patient:hover::-webkit-input-placeholder {
   color: #00ffee !important;
 }
 
-main input#search-patient input#search-patient:hover::-moz-placeholder {
+main input#search-patient:hover::-moz-placeholder {
   color: #00ffee !important;
 }
 
-main input#search-patient input#search-patient:hover:-ms-input-placeholder {
+main input#search-patient:hover:-ms-input-placeholder {
   color: #00ffee !important;
 }
 
-main input#search-patient input#search-patient:hover::-ms-input-placeholder {
+main input#search-patient:hover::-ms-input-placeholder {
   color: #00ffee !important;
 }
 
-main input#search-patient input#search-patient:hover::placeholder {
+main input#search-patient:hover::placeholder {
   color: #00ffee !important;
 }
 
@@ -230,5 +239,74 @@ table.table th > a {
 .flex-center {
   -webkit-box-align: normal !important;
           align-items: normal !important;
+}
+
+.sliderContainer {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin: 10vmin;
+  overflow: hidden;
+  -webkit-transform: skew(5deg);
+          transform: skew(5deg);
+}
+
+.sliderContainer .card {
+  -webkit-box-flex: 1;
+          flex: 1;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  height: 75vmin;
+  position: relative;
+}
+
+.sliderContainer .card .card__head {
+  color: black;
+  background: rgba(255, 30, 173, 0.75);
+  padding: 0.5em;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  -webkit-transform-origin: 0 0;
+          transform-origin: 0 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  min-width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 1em;
+  white-space: nowrap;
+}
+
+.sliderContainer .card:hover {
+  -webkit-box-flex: 10;
+          flex-grow: 10;
+}
+
+.sliderContainer .card:hover .card__head {
+  text-align: center;
+  top: calc(100% - 2em);
+  color: #fff;
+  background: rgba(0, 0, 0, 0.5);
+  font-size: 2em;
+  -webkit-transform: rotate(0deg) skew(-5deg);
+          transform: rotate(0deg) skew(-5deg);
+}
+
+.sliderContainer .card img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+
+.sliderContainer .card:not(:nth-child(5)) {
+  margin-right: 1em;
 }
 

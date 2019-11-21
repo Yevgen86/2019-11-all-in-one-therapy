@@ -35,6 +35,7 @@
     {{--MAIN CONTENT--}}
     <main>
         @yield('main')
+        @yield('front')
     </main>
 
     <div class="links">
