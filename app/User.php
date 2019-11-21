@@ -53,4 +53,18 @@ class User extends Authenticatable
         $this->roles()->save($role);
     }
 
+    public function hasPermission(string $permissionName) : bool
+    {
+        foreach ($this->roles as $role)
+        {
+            if ($role->hasPermissionName($permissionName))
+            {
+                $hasPermission = true;
+                break;
+            }
+        }
+
+        return $hasPermission;
+    }
+
 }
