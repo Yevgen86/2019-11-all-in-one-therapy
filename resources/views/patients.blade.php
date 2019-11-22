@@ -31,6 +31,8 @@
                             <td>{{  $patient->email  }}</td>
                             <td>{{  $patient->plz  }}</td>
                             <td>{{  $patient->city  }}</td>
+                            {{--      TODO: Create right link to the single page of Patient with the right ID                      --}}
+                            <td><a href="/patient/{id}" type="btn btn-success btn-sm"><i class="fas fa-info-circle"></i></a></td>
                         </tr>
                     @endforeach
                     </tbody>
@@ -41,31 +43,4 @@
             </div>
         </div>
     </div>
-{{--    <script type="text/javascript">
-        function findPatient()
-        {
-            var input, filter, table, tr, td, i, txtValue;
-            input = document.getElementById("search-patient");
-            filter = input.value.toUpperCase();
-            table = document.getElementById("patients-table");
-            tr = table.getElementsByTagName("tr");
-
-            for (i = 0; i < tr.length; i++)
-            {
-                td = tr[i].getElementsByTagName("td");
-
-                if (td)
-                {
-                    txtValue = td.textContent || td.innerText;
-
-                    if (txtValue.toUpperCase().indexOf(filter) > -1)
-                    {
-                        tr[i].style.display = "";
-                    } else {
-                        tr[i].style.display = "none";
-                    }
-                }
-            }
-        }
-    </script>--}}
 @endsection

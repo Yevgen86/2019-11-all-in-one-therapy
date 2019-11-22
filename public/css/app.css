@@ -213,6 +213,10 @@ table.table tbody tr:hover {
 
 table.table th {
   padding: 0 !important;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 table.table th > a {
@@ -238,8 +242,8 @@ table.table th > a {
 }
 
 .flex-center {
-  -webkit-box-align: normal!important;
-          align-items: normal!important;
+  -webkit-box-align: normal !important;
+          align-items: normal !important;
 }
 
 .sliderContainer {
@@ -360,6 +364,7 @@ table.table th > a {
   visibility: hidden;
   opacity: 0;
   height: 100%;
+  top: 0;
 }
 
 /* effect text-box */

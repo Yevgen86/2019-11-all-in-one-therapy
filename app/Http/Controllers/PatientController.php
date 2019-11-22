@@ -16,4 +16,11 @@ class PatientController extends Controller
         return view('patients', compact('patients', 'request'));
 
     }
+
+    // TODO: Check this function to work right
+    public function show($id)
+    {
+        $patient = Patient::where('id','=', $id);
+        return view('patient', $patient{$id});
+    }
 }

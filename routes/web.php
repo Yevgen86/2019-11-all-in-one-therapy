@@ -31,4 +31,6 @@ Route::group(['middleware' => ['auth']], function () {
     });
 
     Route::get('/patients', 'PatientController@index');
+
+    Route::get('/patient', 'PatientController@show')->name('patient'); // TODO: The route needs the right parameters
 });

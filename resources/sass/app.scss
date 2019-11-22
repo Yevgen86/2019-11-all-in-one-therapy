@@ -166,6 +166,7 @@ table.table {
 
     th {
         padding: 0!important;
+        user-select: none;
     }
 
     th>a {
